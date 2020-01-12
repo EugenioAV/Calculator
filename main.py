@@ -10,7 +10,7 @@ class NumberButtons:
         self.get_buttons(tk)
 
     def get_buttons(self, tk):
-        for i in range(0,10):
+        for i in range(0, 10):
             self.buttons.append(tkinter.Button(master=tk, text=i))
             self.buttons[i].config(command=lambda t=i, btn=self.buttons[i]: self.put_number(t))
 
